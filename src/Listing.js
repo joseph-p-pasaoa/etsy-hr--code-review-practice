@@ -48,7 +48,7 @@ Listing.fromJSON = function(json) {
 }
 
 Listing.prototype.formatPrice = function() {
-  return this.price.toFixed(2);
+  return `${currency_symbols[this.currency]}${this.price.toFixed(2)} ${this.currency}`;
 };
 
 Listing.prototype.setIsFavorite = function(is_favorite) {
