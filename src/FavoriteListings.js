@@ -12,7 +12,7 @@ FavoriteListings.prototype.isListingFavorited = function(listing) {
 }
 
 FavoriteListings.prototype.addListing = function(listing) {
-  if (this.isListingFavorited() === false) {;
+  if (this.isListingFavorited(listing) === false) {
     this.listings.push(listing);
   }
 };
